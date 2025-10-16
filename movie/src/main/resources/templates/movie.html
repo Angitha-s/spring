@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 th:text="${message}"></h1>	
+    <div th:utext="${hello}"></div>
+    <div th:if="${isLoggedIn}">
+        <p>		Ghilli is a 2004 Indian action film about a state-level kabaddi player, Velu, who rescues a woman named Dhanalakshmi from a ruthless local gangster, Muthupandi, who wants to marry her. The story follows Velu's efforts to save her from the villain's relentless pursuit and a week of action-packed chase sequences in Madurai and Chennai. The film is known for its fast-paced action, humor, and iconic hero-villain dynamic. 
+</p>
+    </div>
+    <div th:if="${!isLoggedIn}">
+        <h1>Please log in to see the full description.</h1>
+    </div>
+</body>
+</html>
